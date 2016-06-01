@@ -13,7 +13,7 @@ RUN yes | /usr/share/one/install_gems
 
 # Set env for ON authentication
 ENV ONE_AUTH=/root/.one_auth
-# (below: should be changed when running the container)
+# (below: should be changed when running the child container)
 ENV ONE_PASSWORD=password 
 RUN echo oneadmin:${ONE_PASSWORD} > ${ONE_AUTH}
 
